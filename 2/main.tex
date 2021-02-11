@@ -1,0 +1,123 @@
+\documentclass[10pt,a4paper,ragged2e,withhyper]{altacv}
+
+%% AltaCV uses the fontawesome5 and academicon fonts
+%% and packages.
+%% See http://texdoc.net/pkg/fontawesome5 and http://texdoc.net/pkg/academicons for full list of symbols. You MUST compile with XeLaTeX or LuaLaTeX if you want to use academicons.
+
+% Change the page layout if you need to
+\geometry{left=1.25cm,right=1.25cm,top=1.5cm,bottom=1.5cm,columnsep=1.2cm}
+
+% The paracol package lets you typeset columns of text in parallel
+\usepackage{paracol}
+
+
+% Change the font if you want to, depending on whether
+% you're using pdflatex or xelatex/lualatex
+\ifxetexorluatex
+  % If using xelatex or lualatex:
+  \setmainfont{Lato}
+\else
+  % If using pdflatex:
+  \usepackage[default]{lato}
+\fi
+
+% Change the colours if you want to
+\definecolor{VividPurple}{HTML}{3E0097}
+\definecolor{SlateGrey}{HTML}{2E2E2E}
+\definecolor{LightGrey}{HTML}{666666}
+% \colorlet{name}{black}
+\colorlet{tagline}{VividPurple}
+\colorlet{heading}{VividPurple}
+\colorlet{headingrule}{VividPurple}
+% \colorlet{subheading}{PastelRed}
+\colorlet{accent}{VividPurple}
+\colorlet{emphasis}{SlateGrey}
+\colorlet{body}{LightGrey}
+
+% Change some fonts, if necessary
+% \renewcommand{\namefont}{\Huge\rmfamily\bfseries}
+% \renewcommand{\personalinfofont}{\footnotesize}
+% \renewcommand{\cvsectionfont}{\LARGE\rmfamily\bfseries}
+% \renewcommand{\cvsubsectionfont}{\large\bfseries}
+
+% Change the bullets for itemize and rating marker
+% for \cvskill if you want to
+\renewcommand{\itemmarker}{{\small\textbullet}}
+\renewcommand{\ratingmarker}{\faCircle}
+
+%% sample.bib contains your publications
+\addbibresource{sample.bib}
+
+\begin{document}
+\name{Istiak Shovon}
+% \photoL{2cm}{Yacht_High,Suitcase_High}
+\personalinfo{%
+  \email{Istiakshovon001@gmail.com}
+  \twitter{@Istiak15335167}
+  \linkedin{istiak-shovon-246698206}
+}
+
+\makecvheader
+
+%% Depending on your tastes, you may want to make fonts of itemize environments slightly smaller
+% \AtBeginEnvironment{itemize}{\small}
+
+%% Set the left/right column width ratio to 6:4.
+\columnratio{0.6}
+
+% Start a 2-column paracol. Both the left and right columns will automatically
+% break across pages if things get too long.
+\begin{paracol}{2}
+
+\cvsection{A Day of My Life}
+
+% Adapted from @Jake's answer from http://tex.stackexchange.com/a/82729/226
+% \wheelchart{outer radius}{inner radius}{
+% comma-separated list of value/text width/color/detail}
+% Some ad-hoc tweaking to adjust the labels so that they don't overlap
+\hspace*{-1em}  %% quick hack to move the wheelchart a bit left
+\wheelchart{1.5cm}{0.5cm}{%
+  10/13em/accent!30/Sleeping \& dreaming about work,
+  25/9em/accent!60/Public resolving issues with Yahoo!\ investors,
+  5/11em/accent!10/\footnotesize\\[1ex]New York \& San Francisco Ballet Jawbone board member,
+  20/11em/accent!40/Spending time with family,
+  5/8em/accent!20/\footnotesize Business development for Yahoo!\ after the Verizon acquisition,
+  30/9em/accent/Showing Yahoo!\ \mbox{employees} that their work has meaning,
+  5/8em/accent!20/Baking cupcakes
+}
+
+%% Switch to the right column. This will now automatically move to the second
+%% page if the content is too long.
+\switchcolumn
+
+\cvsection{Life Philosophy}
+\begin{quote}
+``If you don't have any shadows, you're not standing in the light.''
+\end{quote}
+
+\cvsection{Most Proud of}
+
+\cvachievement{\faTrophy}{Courage I had}{to take a sinking ship and try to make it float}
+
+\cvsection{Strengths}
+
+\cvtag{Hard-working (12/24)}
+\cvtag{Persuasive}\\
+\cvtag{Motivator \& Leader}
+
+\divider\smallskip
+
+\cvtag{UX}
+\cvtag{Mobile Devices \& Applications}
+\cvtag{Software Development}
+
+\cvsection{Languages}
+
+\cvskill{Bangla}{5}
+
+\cvskill{English}{4}
+
+
+\end{paracol}
+
+\end{document}
