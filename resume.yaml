@@ -1,0 +1,141 @@
+cv:
+  name: Istiak Ahmed
+  location: Saraipara, Pahartali, Chittagong
+  email: billyistiak@gmail.com
+  phone: tel:+880-183-686-5063
+  social_networks:
+    - network: LinkedIn
+      username: istiak-ahmed-6251b6255
+    - network: GitHub
+      username: b-istiak-s
+  sections:
+    experience:
+      - company: Khelboo
+        position: Developer
+        location: Sheikh Kamal Software Technology Park, Agrabad, Chattogram
+        start_date: 2023-05
+        end_date: 2025
+        highlights:
+          - Led the development and continuous enhancement of the core system to improve functionality and performance.
+          - Implemented feature upgrades to improve user experience and meet evolving business requirements.
+          - Actively contributed to strategic discussions on growth, offering insights on improving business operations and customer engagement.
+    projects:
+      - name: Metalife
+        # date: '[github.com/name/repo](https://github.com/sinaatalay/rendercv)'
+        highlights:
+          - Developed a comprehensive hospital management system with key features such as patient reporting, virtual payments through Stripe, and online appointment scheduling.
+          - Integrated a secure payment gateway allowing patients to make virtual payments seamlessly.
+          - Built a dynamic database to manage doctors’ profiles and patient data efficiently.
+          - Implemented real-time charts to track hospital earnings and visualize patient visit trends for enhanced reporting and decision-making.
+          - 'Tools Used: HTML, CSS, PHP, MySQL'
+      - name: Gaming Tournament App
+        # date: '[github.com/name/repo](https://github.com/sinaatalay/rendercv)'
+        highlights:
+          - Developed an Android application that allows users to participate in tournaments, compete in games, and earn rewards.
+          - Integrated a secure reward system enabling users to earn in-game or real-world prizes based on their performance.
+          - Implemented user-friendly features like tournament scheduling, leaderboard tracking, and personalized gaming experiences.
+          - Built with a focus on smooth performance, security, and scalability to handle high user traffic during tournaments.
+          - 'Tools Used: Java, Firebase, Android Studio'
+    technologies:
+      - label: Languages
+        details: Java, SQL, HTML, CSS, Javascript, PHP
+      - label: Technologies
+        details: Laravel, MySQL, Firebase, React Native, Adobe Photoshop, Vue.js, 
+    activities : 
+      - name : Codidact
+        highlights : 
+          - Contributed to an open-source GitHub project, answering questions and assisting with solutions.
+          - Offering branding ideas to help establish the platform’s identity.
+      - name : Stack Exchange
+        highlights :
+          - Actively contributed to StackOverflow in 2021, answering Android-related questions and enhancing my skills through helping others.
+          - Engaged with Physics Stack Exchange in 2022, using my knowledge to support the community by answering high school to college level (basics) questions.
+    awards : 
+      - name : "Certificate of Appreciation: Recognized as one of the top contributors to the company's growth at Khelboo."
+      - name : National Mathematics Olympiad Qualifier (State/Regional Selection)
+      - name : National Earth Science Olympiad Qualifier (State/Regional Selection)
+      - name : Regional Physics Olympiad Qualifier (Selection Round Qualifier)
+      - name : Top student from grade 6th to 10th
+
+    education:
+      - institution: Cambrian College
+        area: Science
+        grade: 11th-12th
+        start_date: 2023-02
+        end_date: 2024-08
+        highlights:
+          - 'GPA: N/A'
+
+design:
+  theme: sb2nov
+  font: Latin Modern Serif
+  font_size: 10pt
+  page_size: letterpaper
+  color: '#004f90'
+  disable_external_link_icons: false
+  disable_page_numbering: false
+  page_numbering_style: NAME - Page PAGE_NUMBER of TOTAL_PAGES
+  disable_last_updated_date: false
+  last_updated_date_style: Last updated in TODAY
+  header_font_size: 24 pt
+  text_alignment: justified
+  seperator_between_connections: ''
+  use_icons_for_connections: true
+  margins:
+    page:
+      top: 2 cm
+      bottom: 2 cm
+      left: 2 cm
+      right: 2 cm
+    section_title:
+      top: 0.3 cm
+      bottom: 0.2 cm
+    entry_area:
+      left_and_right: 0.2 cm
+      vertical_between: 0.2 cm
+      date_and_location_width: 4.5 cm
+    highlights_area:
+      top: 0.10 cm
+      left: 0.4 cm
+      vertical_between_bullet_points: 0.10 cm
+    header:
+      vertical_between_name_and_connections: 0.3 cm
+      bottom: 0.3 cm
+      horizontal_between_connections: 0.5 cm
+
+locale_catalog:
+  phone_number_format: national 
+  date_style: "MONTH_ABBREVIATION YEAR" 
+  abbreviations_for_months:
+    - Jan
+    - Feb
+    - Mar
+    - Apr
+    - May
+    - Jun
+    - Jul
+    - Aug
+    - Sep
+    - Oct
+    - Nov
+    - Dec
+  full_names_of_months:
+    - January
+    - February
+    - March
+    - April
+    - May
+    - June
+    - July
+    - August
+    - September
+    - October
+    - November
+    - December
+  month: month
+  months: months
+  year: year
+  years: years
+  present: present
+  to: to
+
